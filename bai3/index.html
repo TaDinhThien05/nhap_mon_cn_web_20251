@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng Sách ABC</title>
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cửa hàng Sách ABC</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Chào mừng đến với Cửa hàng Sách ABC</h2>
+            <p>Nơi mang đến những cuốn sách hay nhất cho mọi lứa tuổi.</p>
+        </section>
+
+        <!-- Danh sách sản phẩm -->
+        <section>
+            <h2>Sản phẩm nổi bật</h2>
+
+            <!-- Phần tìm kiếm sản phẩm -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Nhập tên sách để tìm kiếm...">
+                <button id="searchBtn">Tìm</button>
+            </div>
+
+            <!-- Nút thêm sản phẩm -->
+            <div class="add-product-container">
+                <button id="addProductBtn">Thêm sản phẩm</button>
+            </div>
+
+            <!-- Form thêm sản phẩm (ẩn mặc định) -->
+            <form id="addProductForm" class="hidden">
+                <h3>Thêm sản phẩm mới</h3>
+                <label for="productName">Tên sách:</label><br>
+                <input type="text" id="productName" name="productName" required><br><br>
+
+                <label for="productDesc">Mô tả:</label><br>
+                <textarea id="productDesc" name="productDesc" rows="3" required></textarea><br><br>
+
+                <label for="productPrice">Giá (₫):</label><br>
+                <input type="number" id="productPrice" name="productPrice" required><br><br>
+
+                <button type="submit">Thêm</button>
+                <button type="button" id="cancelBtn">Hủy</button>
+            </form>
+
+            <div id="product-list">
+                <article class="product-item">
+                    <h3 class="product-name">Đắc Nhân Tâm</h3>
+                    <p>Sách kỹ năng sống kinh điển của Dale Carnegie.</p>
+                    <p class="price">Giá: 95.000 ₫</p>
+                </article>
+
+                <article class="product-item">
+                    <h3 class="product-name">Nhà Giả Kim</h3>
+                    <p>Tiểu thuyết nổi tiếng của Paulo Coelho về hành trình theo đuổi giấc mơ.</p>
+                    <p class="price">Giá: 78.000 ₫</p>
+                </article>
+
+                <article class="product-item">
+                    <h3 class="product-name">Harry Potter và Hòn Đá Phù Thủy</h3>
+                    <p>Tập đầu tiên trong series phép thuật của J.K. Rowling.</p>
+                    <p class="price">Giá: 120.000 ₫</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Form liên hệ -->
+        <section>
+            <h2>Liên hệ với chúng tôi</h2>
+            <form>
+                <label for="name">Họ và tên:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Nội dung:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <button type="submit">Gửi</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Cửa hàng Sách ABC - Địa chỉ: số 1 Đại Cồ Việt - Hai Bà Trưng - Hà Nội</p>
+        <p>&copy; 2025 Cửa hàng Sách ABC. All rights reserved.</p>
+    </footer>
+
+    <!-- Nhúng file JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
